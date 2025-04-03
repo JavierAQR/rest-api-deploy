@@ -1,0 +1,33 @@
+### Recuperar todas las películas
+GET http://localhost:1234/movies
+
+### Recuperar una película por id
+GET http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+### Recuperar todas las películas por un género
+GET http://localhost:1234/movies?genre=Drama
+
+### Crear una película
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+ {
+    "title": "HOla",
+    "year": 1997,
+    "director": "CAMERON JAIME",
+    "duration": 195,
+    "rate": 2,
+    "poster": "https://i.pinimg.com/originals/42/42/65/4242658e6f1b0d6322a4a93e0383108b.png",
+    "genre": ["Drama", "Romance"]
+  }
+
+### Actualizar una película
+PATCH http://localhost:1234/movies/416c995a-839c-4e27-96af-e1bcb483439f
+Content-Type: application/json
+
+{
+  "year": 2025
+}
+
+### Borrar una película
+DELETE http://localhost:1234/movies/416c995a-839c-4e27-96af-e1bcb483439f

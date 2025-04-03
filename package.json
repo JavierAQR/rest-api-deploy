@@ -1,0 +1,26 @@
+{
+	"name": "clase-3",
+	"version": "1.0.0",
+	"main": "app.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"clase-3": "file:",
+		"cors": "^2.8.5",
+		"express": "5.1.0",
+		"zod": "3.24.2"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.23.0",
+		"@types/cors": "^2.8.17",
+		"@types/express": "^5.0.1",
+		"eslint": "^9.23.0",
+		"globals": "^16.0.0"
+	}
+}
